@@ -19,3 +19,18 @@ function createPerson(name, age, location){
 }
 const person = createPerson("musa", 19, "lekki");
 console.log(person);
+
+function createJambScores(eng, govt, lit, crk){
+    return{
+        ENG : eng,
+        GOVT : govt,
+        LIT : lit,
+        CRK : crk,
+    }
+}
+const Scores = createJambScores(70, 85, 82, 94);
+person.Scores = createJambScores(70, 85, 82, 94);
+
+console.log(Scores);
+console.log(person.Scores);
+
