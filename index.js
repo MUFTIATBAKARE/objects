@@ -34,3 +34,22 @@ person.Scores = createJambScores(70, 85, 82, 94);
 console.log(Scores);
 console.log(person.Scores);
 
+/**
+ * Question 4
+ * 1. Using object.assign()
+ * 2. Using spread operator(...)
+ * 3. Using JSON.parse(JSON.stringify())
+ */
+
+// Examples
+// Using object.assign()
+const phone = {
+    brand : "Infinix",
+    yearOfRelease : 2020,
+    numberOfSim : 2,
+    model : "X655C",
+    price : "120000naira"
+}
+const phoneClone = Object.assign({},phone);
+console.log(phone);
+console.log({phoneClone});
