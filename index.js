@@ -1,3 +1,4 @@
+// Question 1
 function InstagramPost(handleOfAuthor, content, imageLink, numberOfViews, numberOfLikes){
     this.handleOfAuthor = handleOfAuthor;
     this.content = content;
@@ -5,11 +6,14 @@ function InstagramPost(handleOfAuthor, content, imageLink, numberOfViews, number
     this.numberOfViews = numberOfViews;
     this.numberOfLikes = numberOfLikes;
 }
+
+// Question 2
 const postA = new InstagramPost("madebymimee", "video", "hhtps.instagram.com/madebymimee", 540, 420);
 const postB = new InstagramPost("alx_africa", "picture", "hhtps.instagram.com/alx_africa", 12540, 920);
 console.log(postA);
 console.log(postB);
 
+// Question 3a
 function createPerson(name, age, location){
     return{
         name : name,
@@ -20,6 +24,7 @@ function createPerson(name, age, location){
 const person = createPerson("musa", 19, "lekki");
 console.log(person);
 
+// Question 3b
 function createJambScores(eng, govt, lit, crk){
     return{
         ENG : eng,
@@ -81,3 +86,16 @@ const laptop = {
 const laptopClone = JSON.parse(JSON.stringify(laptop));
 console.log(laptop);
 console.log({laptopClone});
+
+// Question 5
+const presidentialCandidates = {
+    AAC : 'Omoyele Sowore',
+    ACCORD : 'Christopher Imumolen',
+    APC : 'Bola Ahmed Tinubu',
+    LP : 'Peter Obi',
+    NNPP : 'Rabiu Kwankwaso',
+    PDP : 'Atiku Abubakar'
+}
+for (const AAC in presidentialCandidates){
+    console.log(presidentialCandidates[AAC] + " is the presidential candidate of " + [AAC] )
+}
