@@ -53,3 +53,19 @@ const phone = {
 const phoneClone = Object.assign({},phone);
 console.log(phone);
 console.log({phoneClone});
+
+// using spread operator(...)
+const student = {
+    name : "peter obi",
+    matricNumber : "156/MS/89",
+    matricYear: 1986,
+    gradYear : 1993,
+    currentLevel : 500,
+    courseOfStudy : "Medicine and Surgery",
+    department : "Medicine and Surgery",
+    faculty : "Clinical Sciences"
+
+}
+const studentClone = {... student};
+console.log(student);
+console.log({studentClone});
