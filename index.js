@@ -69,3 +69,15 @@ const student = {
 const studentClone = {... student};
 console.log(student);
 console.log({studentClone});
+
+// Using JSON.parse(JSON.stringify())
+const laptop = {
+    brand : "hp",
+    operatingSystem : "windows 10",
+    processorType : "interCore i5",
+    memory : "8GB RAM",
+    internalDrive : "256GB ssd"
+}
+const laptopClone = JSON.parse(JSON.stringify(laptop));
+console.log(laptop);
+console.log({laptopClone});
