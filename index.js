@@ -96,6 +96,6 @@ const presidentialCandidates = {
     NNPP : 'Rabiu Kwankwaso',
     PDP : 'Atiku Abubakar'
 }
-for (const AAC in presidentialCandidates){
-    console.log(presidentialCandidates[AAC] + " is the presidential candidate of " + [AAC] )
+for (const key in presidentialCandidates){
+    console.log(presidentialCandidates[key] + " is the presidential candidate of " + key )
 }
