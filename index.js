@@ -34,9 +34,8 @@ function createJambScores(eng, govt, lit, crk){
     }
 }
 const Scores = createJambScores(70, 85, 82, 94);
-person.Scores = createJambScores(70, 85, 82, 94);
+person.Scores = Scores;
 
-console.log(Scores);
 console.log(person.Scores);
 
 /**
